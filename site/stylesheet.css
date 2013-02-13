@@ -747,8 +747,21 @@ body footer p, .newArt footer p  {
 }
 
 
+.drexelLogo {
 
+    float:right !important; 
+    margin-top:-49px !important;
+    margin-right:3px !important;
+    width:70px !important;
 
+}
 
+.footerTop {
 
+    margin-top:15px;
+}
 
+.footerBottom {
+
+    margin-bottom: -7px;
+}
