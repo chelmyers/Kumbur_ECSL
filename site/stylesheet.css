@@ -382,6 +382,8 @@ footer{
        margin-top:4px;
 
        margin-bottom: 4px;
+
+       margin-right:-310px;
     }
 
   
@@ -746,9 +748,9 @@ body footer p, .newArt footer p  {
 
 .drexelLogoIn {
 
-    float:right !important; 
-    margin-top:4px !important;
-    margin-right:3px !important;
+    position:absolute;
+    bottom: 5px;
+    right:5px;
     width:70px !important;
 }
 
