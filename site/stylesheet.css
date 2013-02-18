@@ -334,7 +334,6 @@ footer{
     bottom: 0;
     width:100%;
     min-width: 1075px;
-    clear:both;
   
 
  }
@@ -374,7 +373,7 @@ footer{
 
 
 
-   body footer img,  body footer .drexelLogo {
+   .memLogo {
 
        width:310px;
 
@@ -382,7 +381,7 @@ footer{
 
        margin-top:4px;
 
-       margin-bottom: 4px;"
+       margin-bottom: 4px;
     }
 
   
@@ -740,23 +739,19 @@ body footer p, .newArt footer p  {
 
 .footerInfo {
 
-    float:left;
-
-    padding-left:20%;
-
     margin-top:10px;
 
 }
 
 
-.drexelLogo {
+.drexelLogoIn {
 
     float:right !important; 
-    margin-top:-49px !important;
+    margin-top:4px !important;
     margin-right:3px !important;
     width:70px !important;
-
 }
+
 
 .footerTop {
 
