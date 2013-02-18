@@ -89,19 +89,25 @@ body {
 #content {
 
     width:1035px;
-    margin:0 auto;
+    padding:0px 50px 0px 50px;
+    display: block;
+    margin:0px auto;
     overflow:hidden;
+
  
  }
 
+
+
 .push{
-    height:25px;
+    height:50px;
 }
+
+
 #banner{
     height:126px;
-    background-color:#222020; 
-    width:;   
-    min-width:1075px;
+    background-color:#222020;   
+    min-width:1235px;
     border-bottom:4px solid #030303;
    
 }
@@ -332,22 +338,24 @@ footer{
     position: absolute;
     left: 0;
     bottom: 0;
+    height:78px;
     width:100%;
-    min-width: 1075px;
+    min-width: 1235px;
     clear:both;
   
 
  }
-    footer p{
+    #centerFootText p, footer p{
         color:#fff;
         font-size:14px;
         font-family:'SourceSansProLight';
         margin:0;
         float:none;
         line-height:14px; 
+        text-align: center;
     }
 
-    footer p a:link{
+    #centerFootText p a:link, footer p a:link{
         color:#fff;
         font-size:14px;
         font-family:'SourceSansProLight';
@@ -355,7 +363,7 @@ footer{
         text-decoration:none;
         float:none;
     }
-      footer p a:visited{
+      #centerFootText p a:visited, footer p a:visited{
         color:#fff;
         font-size:14px;
         font-family:'SourceSansProLight';
@@ -363,7 +371,7 @@ footer{
         text-decoration:none;
         float:none;
     }
-      footer p a:hover{
+      #centerFootText p a:hover,footer p a:hover{
         color:#E03D0B;
         font-size:14px;
         font-family:'SourceSansProLight';
@@ -374,15 +382,12 @@ footer{
 
 
 
-   body footer img,  body footer .drexelLogo {
+   .memLogo {
 
        width:310px;
 
-       float:left;
-
-       margin-top:4px;
-
-       margin-bottom: 4px;"
+       position:absolute;
+       
     }
 
   
@@ -752,11 +757,22 @@ body footer p, .newArt footer p  {
 .drexelLogo {
 
     float:right !important; 
-    margin-top:-49px !important;
+    margin-top:-45px !important;
     margin-right:3px !important;
     width:70px !important;
 
 }
+
+.drexelLogoIn {
+
+    float:right !important; 
+    margin-top:4px !important;
+    margin-right:3px !important;
+    width:70px !important;
+
+}
+
+
 
 .footerTop {
 
@@ -766,4 +782,13 @@ body footer p, .newArt footer p  {
 .footerBottom {
 
     margin-bottom: -7px;
+}
+
+#centerFootText {
+
+    position: absolute;
+
+    width:300px;
+
+    bottom:20px;
 }

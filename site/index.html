@@ -15,6 +15,10 @@
 
 		<link rel="stylesheet" href="stylesheet.css" />
 
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+
+	
 	</head>
 
 
@@ -100,23 +104,83 @@
 		</div><!--content-->
 		<div class="push"></div>
 
+
+
+
+
 		<footer>
 
 			
-			<a href="http://drexel.edu/mem/"><img src="img/logoMem.png" /></a>
+			<!--<a href="http://drexel.edu/mem/"><img src="img/logoMem.png" /></a>
 			<div class="footerInfo">	
 				<p style="padding-top:10px"><a href="http://www.drexel.edu/">Drexel University</a></p>
 				<p><a href="http://drexel.edu/mem/">Dept. of Mechanical Engineering and Mechanics</a></p>
 				<p>Philadelphia, PA 19104</p>
-			</div>
+			</div>-->
+
+			<a href="http://drexel.edu/mem/"><img class="memLogo" src="img/logoMem.png" /></a>
+			<img class="drexelLogoIn" src="img/drexelLogo.png"/>
+			
+
+
 			
 
 
 		</footer>
 
+		<div id="centerFootText">
+				<p class="footerTop"><a href="http://www.drexel.edu/">Drexel University</a></p>
+				<p ><a href="http://drexel.edu/mem/">Dept. of Mechanical Engineering</a></p>
+				<p class="footerBottom">Philadelphia, PA 19104</p>
+		</div>
+
+
+	<script type="text/javascript">
+
+			var $ = function (id) {
+				return document.getElementById(id);
+			}
+
+			//alert("win" + winWidth + 
+				//"\n" + "text" + text + 
+				//"\n" + "new" + newWidth)
+			var resize = function () {
+
+				var winWidth = window.innerWidth;
+				var text = $("centerFootText").clientWidth;
+				var newWidth = (winWidth - text) / 2;
+
+				if (window.innerWidth >= "1251") {
+					$("centerFootText").style.left = newWidth + "px"; 
+				}
+				else {
+					$("centerFootText").style.left = "475.5px"
+				}
+
+			}
+
+
+			window.onload = function () {
+				resize();
+			}	
+
+		
+			window.onresize = function(event) {
+
+				resize();
+
+			}
+
+			
+			
+			
+
+			
 
 
 
+
+		</script>
 
 	</body>
 
